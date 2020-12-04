@@ -9,9 +9,56 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Mes trajets</ion-title>
+      
+      
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <style>
+    .suppression{
+      float:right;
+      --width: 60px;
+      --height: 60px;
+      --vertical-align: middle;
+      --padding-start: 10px;
+      --padding-end: 10px;
+}
+    
+
+  </style>
+
+  <ion-list>
+    <ion-item>
+      <ion-label class="texte">Trajet Caen/Paris 
+      </ion-label> <ion-button class="suppression" (click)="supprimer()" color=danger><ion-icon name="trash-sharp" color=light size="medium"></ion-icon></ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label class="texte">Trajet Caen/Paris 
+      </ion-label> 
+      <ion-button class="suppression" (click)="supprimer()" color=danger><ion-icon name="trash-sharp" color=light size="medium"></ion-icon></ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label class="texte">Trajet Caen/Paris 
+      </ion-label> 
+      <ion-button class="suppression" (click)="supprimer()" color=danger><ion-icon name="trash-sharp" color=light size="medium"></ion-icon></ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label class="texte">Trajet Caen/Paris 
+      </ion-label> 
+      <ion-button class="suppression" (click)="supprimer()" color=danger><ion-icon name="trash-sharp" color=light size="medium"></ion-icon></ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label class="texte">Trajet Caen/Paris 
+      </ion-label> 
+      <ion-button class="suppression" (click)="supprimer()" color=danger><ion-icon name="trash-sharp" color=light size="medium"></ion-icon></ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label class="texte">Trajet Caen/Paris 
+      </ion-label> 
+      <ion-button class="suppression" (click)="supprimer()" color=danger><ion-icon name="trash-sharp" color=light size="medium"></ion-icon></ion-button>
+    </ion-item>
+    
+  </ion-list>
+
 </ion-content>

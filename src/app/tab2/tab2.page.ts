@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular'; 
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +8,15 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
-
-}
+  constructor(public alertCtrl: AlertController) { }  
+ async supprimer() { 
+  const alert = await this.alertCtrl.create({ 
+  header: 'Suppression', 
+  subHeader: 'Etes-vous sûr de vouloir supprimer ?',
+  buttons: ['NON','OUI'] 
+  }); 
+  await alert.present(); 
+  const result = await alert.onDidDismiss();  
+  console.log(result); 
+  } 
+ } 
